@@ -1,0 +1,11 @@
+.menu {
+    width: calc(100% / 12);
+    position: absolute;
+    text-align: center;
+
+    & a {
+        & i {
+            font-size: 1.6em;
+        }
+    }
+}

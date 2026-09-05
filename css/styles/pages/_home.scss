@@ -1,0 +1,39 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 8px;
+
+    & li {
+        padding: 8px;
+        border-radius: 4px;
+        grid-column: span 12;
+
+        @include breakpoint($medium) {
+            grid-column: span 6;
+        }
+        @include breakpoint($large) {
+            grid-column: span 4;
+        }
+
+        & a {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: space-around;
+            align-items: center;
+
+            & picture {
+                width: 100%;
+                aspect-ratio: 2/1;
+
+                & img {
+                    max-width: 100%;
+                    height: auto;
+                    clip-path: inset(1px);
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}

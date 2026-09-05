@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Le plateau | Mémoire</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+            </div>
+            <h1>mémoire</h1>
+            <div class="container__small">
+    
+                <div class="container__small--game-config configs">
+                    <div class="configs__game">
+                        <div>
+                            <div class="configs__game--title">
+                                <h2>mode</h2>
+                            </div>
+                            <div class="configs__game--items modes">
+                                <button id="solo"><i class="fas fa-user"></i></button>
+                                <button id="player-vs-player"><i class="fas fa-user-friends"></i></button>
+                                <button id="player-vs-computer"><i class="fas fa-robot"></i></button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="configs__game--title">
+                                <h2>difficulté</h2>
+                            </div>
+                            <div class="configs__game--items difficulties">
+                                <button id="very_easy">très facile</button>
+                                <button id="easy">facile</button>
+                                <button id="normal">normal</button>
+                                <button id="hard">difficile</button>
+                                <button id="very_hard">très difficile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container__small--center">
+                    <div id="game" data-name="memory">
+                        <div class="memory">
+                            <div class="memory__modes" id="memory-modes">
+                                <div id="player1">
+                                    <h3>joueur 1</h3>
+                                    <p>Points : <span id="player1Points"></span></p>
+                                </div>
+                                <div id="player2">
+                                    <h3></h3>
+                                    <p>Points : <span id="player2Points"></span></p>
+                                </div>
+                            </div>
+    
+                            <div class="memory__cards" id="memory-cards">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container__small--visual-config configs">
+                    <div class="configs__visual">
+                        <div>
+                            <div class="configs__visual--title">
+                                <h2>thèmes</h2>
+                            </div>
+                            <div class="configs__visual--items themes">
+                                <button id="gold">or</button>
+                                <button id="nature">nature</button>
+                                <button id="dark">sombre</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="configs__visual--title">
+                                <h2>polices</h2>
+                            </div>
+                            <div class="configs__visual--items polices">
+                                <button id="open">open</button>
+                                <button id="roboto">roboto</button>
+                                <button id="montserrat">montserrat</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal">
+            <p></p>
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/a7e2f2f4a7.js" crossorigin="anonymous"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/configs.js"></script>
+    <script src="js/memory.js"></script>
+</body>
+</html>

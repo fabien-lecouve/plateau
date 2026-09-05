@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Le plateau | Mastermind</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="menu">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+            </div>
+            <h1>mastermind</h1>
+            <div class="container__small">
+    
+                <div class="container__small--game-config configs">
+                    <div class="configs__game">
+                        <div>
+                            <div class="configs__game--title">
+                                <h2>mode</h2>
+                            </div>
+                            <div class="configs__game--items modes">
+                                <button id="solo">solo</button>
+                                <button id="player-vs-player">pvp</button>
+                                <button id="player-vs-computer">pvc</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="configs__game--title">
+                                <h2>difficulté</h2>
+                            </div>
+                            <div class="configs__game--items difficulties">
+                                <button id="easy">facile</button>
+                                <button id="normal">normal</button>
+                                <button id="hard">difficile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container__small--center">
+                    <div id="game" data-name="mastermind">
+                        <div class="mastermind">
+                            <div class="mastermind__colors">
+                                <div class="mastermind__colors--palette">
+                                    <div id="red"></div>
+                                    <div id="green"></div>
+                                    <div id="blue"></div>
+                                    <div id="yellow"></div>
+                                    <div id="cyan"></div>
+                                    <div id="magenta"></div>
+                                </div>
+                                <div class="mastermind__colors--selected"></div>
+                                <button class="mastermind__colors--btn">validez</button>
+                            </div>
+                            <div class="mastermind__tries"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container__small--visual-config configs">
+                    <div class="configs__visual">
+                        <div>
+                            <div class="configs__visual--title">
+                                <h2>thèmes</h2>
+                            </div>
+                            <div class="configs__visual--items themes">
+                                <button id="gold">or</button>
+                                <button id="nature">nature</button>
+                                <button id="dark">sombre</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="configs__visual--title">
+                                <h2>polices</h2>
+                            </div>
+                            <div class="configs__visual--items polices">
+                                <button id="open">open</button>
+                                <button id="roboto">roboto</button>
+                                <button id="montserrat">montserrat</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="modal">
+            <p></p>
+        </div> -->
+    </main>
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/a7e2f2f4a7.js" crossorigin="anonymous"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/configs.js"></script>
+    <script src="js/mastermind.js"></script>
+</body>
+</html>

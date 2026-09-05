@@ -1,0 +1,15 @@
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/normalize';
+@import './base/typography';
+
+@import './layouts/configs';
+@import './layouts/container';
+@import './layouts/menu';
+
+@import './pages/home';
+@import './pages/memory';
+@import './pages/mastermind';
+
+@import './themes/colors';

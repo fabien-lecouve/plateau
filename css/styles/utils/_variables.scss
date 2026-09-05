@@ -1,0 +1,63 @@
+$small: 'small';
+$medium: 'medium';
+$large: 'large';
+
+$red: red;
+$green: green;
+$blue: blue;
+$yellow: yellow;
+$cyan: cyan;
+$magenta: magenta;
+
+$dark-title-color: #9a1f00;
+$dark-text-color: #D3D3D3;
+$dark-border-color: #ECECEC;
+$dark-primary-bg-color: #1e1e1e;
+$dark-secondary-bg-color: #565656;
+
+$nature-title-color: #F3CA52;
+$nature-text-color: #F6E9B2;
+$nature-border-color: #F6E9B2;
+$nature-primary-bg-color: #0A6847;
+$nature-secondary-bg-color: #7ABA78;
+
+$gold-title-color: #C08B5C;
+$gold-text-color: #FFC94A;
+$gold-border-color: #FFC94A;
+$gold-primary-bg-color: #795458;
+$gold-secondary-bg-color: #453F78;
+
+$open: "Open Sans", sans-serif;
+$roboto: "Roboto", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+
+:root {
+    --font-family-open: #{$open};
+    --font-family-roboto: #{$roboto};
+    --font-family-montserrat: #{$montserrat};
+
+    --dark-title-color: #{$dark-title-color};
+    --dark-text-color: #{$dark-text-color};
+    --dark-border-color: #{$dark-border-color};
+    --dark-primary-bg-color: #{$dark-primary-bg-color};
+    --dark-secondary-bg-color: #{$dark-secondary-bg-color};
+
+    --nature-title-color: #{$nature-title-color};
+    --nature-text-color: #{$nature-text-color};
+    --nature-border-color: #{$nature-border-color};
+    --nature-primary-bg-color: #{$nature-primary-bg-color};
+    --nature-secondary-bg-color: #{$nature-secondary-bg-color};
+
+    --gold-title-color: #{$gold-title-color};
+    --gold-text-color: #{$gold-text-color};
+    --gold-border-color: #{$gold-border-color};
+    --gold-primary-bg-color: #{$gold-primary-bg-color};
+    --gold-secondary-bg-color: #{$gold-secondary-bg-color};
+    
+    --font-family: --font-family-open;
+    --title-color: --dark-title-color;
+    --text-color: --dark-text-color;
+    --border-color: --dark-border-color;
+    --primary-bg-color: --dark-primary-bg-color;
+    --secondary-bg-color: --dark-secondary-bg-color;
+}
